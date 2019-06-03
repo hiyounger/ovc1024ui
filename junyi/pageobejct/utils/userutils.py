@@ -6,6 +6,8 @@ class UserUtils():
 
     @classmethod
     def login(cls, email, password):
-        LoginPage().login(email, password)
+        loginPage = LoginPage()
+        loginPage.open_and_check()
+        loginPage.login(email, password)
 
 
