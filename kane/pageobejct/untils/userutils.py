@@ -6,4 +6,4 @@ class UserUtils():
 
     @classmethod
     def login(cls,email,password):
-        LoginPage().login(email,property)
+        LoginPage().login(email,password)
