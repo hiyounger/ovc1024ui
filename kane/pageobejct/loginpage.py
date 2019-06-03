@@ -30,13 +30,13 @@ class LoginPage():
 
     def login(self,email,password):
         self.input_email_element.send_keys(email)
-        self.input_password_element.send_keys(property)
+        self.input_password_element.send_keys(password)
         self.submit_login_element.click()
 
     def open_and_check(self):
         self.__driver.get(LOGIN_PAGE_URL)
 
-        if self.page_flag.text == "用户登录":
+        if self.page_flag.text == u"用户登录":
             return True
         else:
             return False
