@@ -39,7 +39,7 @@ class LoginPage():
         '''打开并检测页面是否正确展示，如果正确返回true，如果不正确返回false'''
         self.__driver.get(LOGIN_PAGE_URL)
 
-        if self.page_flag.text == "用户登录":
+        if self.page_flag.text == u"用户登录":
             return True
         else:
             return False

@@ -2,6 +2,7 @@
 
 from junyi.pageobejct.loginpage import LoginPage
 
+
 class UserUtils():
 
     @classmethod
