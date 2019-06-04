@@ -4,11 +4,12 @@ from laijunchen.utils.abs import Singleton
 
 @Singleton
 class FireFoxDirver():
-    __dirver = None
+
+    __driver = None
 
     def __init__(self):
-        if self.__dirver == None:
-            self.__dirver =webdriver.Firefox()
+        if self.__driver == None:
+            self.__driver = webdriver.Firefox()
 
-    def get_dirver(self):
-        return self.__dirver
+    def get_driver(self):
+        return self.__driver

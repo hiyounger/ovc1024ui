@@ -10,7 +10,7 @@ class TestUserGroupCases(unittest.TestCase):
     def test_case_258(self):
         # 前置条件
         #1. 用户登录成功
-        UserUtils.login('qsong.vip@qq.com', 'hiyounger888')
+        UserUtils.login('382135230@qq.com', 'Ljc960614')
         #2. 打开小组页面
         UsergroupPage().open_and_check()
         UsergroupPage().create_group_button.click()
