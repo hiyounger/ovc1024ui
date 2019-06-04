@@ -14,11 +14,8 @@ class TestUserGroupCases(unittest.TestCase):
         UserUtils().login('763208734@qq.com', 'yu75321ysq')
         #2. 打开小组页面
         UserGroupPage().open_and_check()
-        UserGroupPage().create_group_button().click()
-
         #测试步骤
-        act_result = UserGroupCreatePage().check_if_page_open()
-        self.assertTrue(act_result)
+        self.assertTrue(UserGroupCreatePage().open_and_check())
 
 
 if __name__ == '__main__':

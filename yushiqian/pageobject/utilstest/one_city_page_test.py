@@ -1,12 +1,10 @@
+# -*-encoding:utf-8-*-
 import unittest
 from yushiqian.pageobject.utils.userutils import UserUtils
-from yushiqian.pageobject.user_group_page import UserGroupPage
+from yushiqian.pageobject.one_city_page import OneCityPage
 from yushiqian.pageobject.loginpage import LoginPage
 import time
-
-
-class TestUserGroupPage(unittest.TestCase):
-
+class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         username = '763208734@qq.com'
@@ -17,8 +15,9 @@ class TestUserGroupPage(unittest.TestCase):
 
     def test_open_user_group_page(self):
 
-        UserGroupPage().open_and_check()
-        self.assertTrue(UserGroupPage().open_and_check())
+        self.assertTrue(OneCityPage().open_and_check())
+
+
 
 if __name__ == '__main__':
     unittest.main()
