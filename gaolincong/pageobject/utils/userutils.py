@@ -1,5 +1,5 @@
 # -*- encoding:utf-8 -*-
-from gaolincong.pageobject.utils.loginpage import Login
+from gaolincong.pageobject.loginpage import Login
 
 class UserUtils():
     @classmethod
